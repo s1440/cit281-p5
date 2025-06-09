@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Search Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Word Search</h1>
+
+  <p class="instructions">
+    Select a theme for your word search. 
+    Below the grid of letters you will see the words you have to find. 
+    Click on letters in the grid and press submit when you think you have found a word. 
+    Words can go horizontally or vertically, good luck!
+  </p>
+
+  <label for="theme-select">Choose a theme:</label>
+  <select id="theme-select">
+    <option value="" disabled selected>Select a theme</option>
+    <option value="Animals">Animals</option>
+    <option value="Flowers">Flowers</option>
+    <option value="Colors">Colors</option>
+    <option value="States">States</option>
+    <option value="Oregon">Oregon</option>
+  </select>
+  <button id="start-btn">Start Game</button>
+
+  <h2>Grid</h2>
+  <div id="grid" class="grid-container"></div>
+
+  <h2>Words to Find</h2>
+  <ul id="word-list"></ul>
+
+  <button id="submit-word">Submit</button>
+
+  <p id="result"></p>
+
+  <div id="win-message" style="display: none; margin-top: 20px;">
+    <h2>🎉 Congratulations! You found all the words!</h2>
+    <button id="play-again">Play Again</button>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- This file contains the HTML.
+You must link your CSS and client-side JavaScript code.
+Your client must have at least one button that results in an API call to the server, must send and receive JSON, and display some type of result by updating the browser.
+Your client must implement a strategy to add data using POST, must send and receive JSON, and display some type of a result of the POST by updating the browser. -->
+
+<!-- public/index.html -->

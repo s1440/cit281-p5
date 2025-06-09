@@ -1,0 +1,72 @@
+/* This file contains the CSS for your client. */
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .instructions {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #444;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-cell {
+    width: 30px;
+    height: 30px;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  #word-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #word-list li {
+    margin-bottom: 4px;
+  }
+  
+  #word-list li.found {
+    text-decoration: line-through;
+    color: green;
+    font-weight: bold;
+  }
+  
+  input, select, button {
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  
+  #result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .grid-cell.selected {
+    background-color: lightblue;
+    border-color: blue;
+  }
+  
+  .grid-cell.found {
+    background-color: lightgreen;
+    color: white;
+    font-weight: bold;
+  }
+  
